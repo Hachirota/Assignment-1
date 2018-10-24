@@ -123,7 +123,10 @@ public class Assignment1
 
     String [] topicList = {"Information Studies in Organisations",
     "Evaluation of Database Design Approaches","Abundant-data Applications"
-    ,"","","","","","","","","","","","","","","","",""};
+    ,"Computer Security","Cryptography","Real-Time Systems","Data Mining",
+    "Route Planning","Bioinformatics","Information Retrieval",
+    "Computer Security","Optical Character Recognition","",
+    "","","","","","",""};
 
 
    Undergraduate[] Undergradarray = new Undergraduate[20];
