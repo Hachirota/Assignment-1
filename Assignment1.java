@@ -61,7 +61,7 @@ public class Assignment1
    for (int i = 0 ; i < 20 ; i++){
      if (s[i].assignGrade() == 'F'){
        s[i].gradeWarning();
-       System.out.format("Student %s has a failing GPA", s[i].getInitials());
+       System.out.format("Student %s has a failing Grade average.", s[i].getInitials());
      }
    }
  }

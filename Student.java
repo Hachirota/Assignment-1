@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Student implements CalculateGrade
 {
+  // instance variables
   protected String studentName;
   protected int studentID;
   protected String course;
@@ -9,11 +10,13 @@ public class Student implements CalculateGrade
   protected boolean registrationStatus;
   protected ArrayList<Integer> subjectMarks;
 
+  // constructor
   Student ()
  {
 
  }
 
+  // Set methods for instance variables
   public void setStudentName(String nameInput)
   {
     studentName = nameInput;
@@ -47,7 +50,7 @@ public class Student implements CalculateGrade
     }
   }
 
-
+  //Get methods for instance variables
   public String returnName()
   {
     return studentName;
@@ -82,27 +85,28 @@ public class Student implements CalculateGrade
   {
     return subjectMarks;
   }
-
+  //Method to calculate average grade
   public int calculateGradeAverage()
   {
     int gradeTotal = 0;
     int gradeAverage = 0;
-
+    //for loop iterates over array of subject marks and totals them
     for(int i = 0 ; i < 10 ; i++)
     {
       gradeTotal += subjectMarks.get(i);
     }
-
+    // calculate average mark
     gradeAverage = gradeTotal / 10;
-
+    // return average mark
     return gradeAverage;
 
   }
-
+  // method to assign grade based on average mark
   public char assignGrade()
   {
+    // call method to calculate average
    int avGrade = calculateGradeAverage();
-
+   //if statement assigns grade based on calculated average
    if (avGrade >= 80)
    {
     return 'A';
